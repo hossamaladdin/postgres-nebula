@@ -19,6 +19,8 @@ This repository contains production-ready, generic scripts and tools for managin
 **PostgreSQL Management**:
 - **pg-clone.sh** - Clone PostgreSQL instances for testing/backup
 - **find_pg_same_az.sh** - Find PostgreSQL instances in the same availability zone
+- **resize-cluster.sh** - Resize PostgreSQL cluster instances with safety checks (primary/secondary/DR)
+- **mothballing_practical.sh** - Decommission PostgreSQL clusters (procedures template)
 
 **AWS Tagging**:
 - **verify_tags.sh** - Verify and audit AWS resource tags
@@ -46,6 +48,12 @@ bash/resize-ebs-vol.sh <volume-id> <new-size>
 
 # Clone PostgreSQL instance
 bash/pg-clone.sh
+
+# Resize cluster instance
+bash/resize-cluster.sh -c 123 -r primary -t m5.2xlarge -i i-0123456789abcdef0
+
+# Decommission cluster (procedures template)
+bash/mothballing_practical.sh
 ```
 
 ## Configuration
