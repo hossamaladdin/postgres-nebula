@@ -1,0 +1,85 @@
+# macOS
+.DS_Store
+.localized
+._*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Credentials and secrets
+*.pem
+*.key
+*.env
+.env.*
+credentials.json
+secrets.yaml
+*password*
+*secret*
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Backup files
+*.bak
+*.backup
+*~
+*.old
+
+# Claude settings (local only)
+.claude/
+
+# Test data
+test_*.txt
+test_*/
+
+# CSV data files with potentially sensitive data
+*.csv
+
+# HTML exports (may contain sensitive bookmarks)
+*.html
+
+# Output files
+*.out
+
+# Local workspace files
+*.code-workspace
+
+# Ruby
+*.gem
+.bundle/
+vendor/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# Ansible
+*.retry
+
+# Database dumps with potentially sensitive data
+*_dump.sql
+schema_dump.sql
+
+# Sensitive company-specific scripts (kept locally only)
+sensitive/
